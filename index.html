@@ -49,8 +49,8 @@
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
-              <h1 class="mb-5">"HELL YEAH BRO MANTUL"</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Gabung Sekarang</a>
+              <h1 class="mb-5">"ada Onta makan Kelinci"</h1>
+              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Download Sekarang!</a>
             </div>
           </div>
           <div class="col-lg-5 my-auto">
@@ -60,7 +60,20 @@
                   <div class="screen">
                     <img src="img/demo-screen.jpg" class="img-fluid" alt="">
                   </div>
-                  <div class="button" onclick="alert('hi 😜');"></div>
+                  <div class="button" onclick="playAudio();"></div>
+                  <audio id="myAudio">
+                    <source src="./img/kuda.wav" type="audio/wav">
+                  <script>
+                    var x = document.getElementById("myAudio"); 
+                
+                    function playAudio() { 
+                      x.play(); 
+                    } 
+                
+                    function pauseAudio() { 
+                    x.pause(); 
+                    }
+                </script> 
                 </div>
               </div>
             </div>
