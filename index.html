@@ -112,7 +112,20 @@
                   <div class="screen">
                     <img src="img/demo-screen.jpg" class="img-fluid" alt="">
                   </div>
-                  <div class="button" onclick="alert('😉')"></div>
+                  <div class="button" onclick="playAudio();"></div>
+                  <audio id="myAudio">
+                    <source src="./img/kuda.wav" type="audio/wav">
+                  <script>
+                    var x = document.getElementById("myAudio"); 
+                
+                    function playAudio() { 
+                      x.play(); 
+                    } 
+                
+                    function pauseAudio() { 
+                    x.pause(); 
+                    }
+                </script> 
                 </div>
               </div>
             </div>
